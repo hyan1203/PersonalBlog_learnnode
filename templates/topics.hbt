@@ -1,0 +1,10 @@
+{{> header}}
+<div class='tags'>
+<h1>{{tag}}</h1>
+</div>
+
+{{#each pagination.files}}
+	<div class='tag-article'>
+        <a href="../../{{this.path}}/index.html"><h2>* {{this.title}}</h2></a>
+  </div>
+{{/each}}

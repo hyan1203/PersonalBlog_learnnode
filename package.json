@@ -1,0 +1,25 @@
+{
+  "name": "learnnode",
+  "version": "1.0.0",
+  "description": "nerd session",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "0.0.2",
+    "handlebars": "^3.0.3",
+    "metalsmith": "^0.6.0",
+    "metalsmith-archive": "^0.1.1",
+    "metalsmith-collections": "^0.4.0",
+    "metalsmith-drafts": "0.0.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-more": "^0.2.0",
+    "metalsmith-permalinks": "^0.3.0",
+    "metalsmith-tags": "^0.11.0",
+    "metalsmith-templates": "^0.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

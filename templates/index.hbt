@@ -1,0 +1,50 @@
+{{> header}}
+<body>
+    {{> navigation}}
+    <div class='wrap'>
+    <div class="container-fluid">
+      <div class="col-sm-8 summary">
+          {{#each collections.blog}}
+          <article>
+              <h2>
+                  <a href="{{this.path}}/index.html">{{this.title}}</a>
+              </h2>
+              {{#if this.less}}
+                  <div>{{{this.less}}}</div>
+                  <div class="pull-right read-more"><a href="{{this.path}}/index.html">read more...</a></div>
+              {{else}}
+                  <div>{{{this.contents}}}</div>
+              {{/if}}
+              <div class="article-footer">
+                  <div class="date"><span class="glyphicon glyphicon-calendar"></span> {{betterDate this.date}}</div>
+                  <div class="comment">
+                      <span class="glyphicon glyphicon-comment"></span>
+                      <a href="{{this.path}}/index.html#disqus_thread" data-disqus-identifier="{{this.path}}">comments</a>
+                  </div>
+                  <!--tags delete-->
+                  <div class="tags"><span class="glyphicon glyphicon-tags"></span> {{{betterTags this.tags}}}</div>
+              </div>
+          </article>
+          {{/each}}
+      </div>
+        <div class="hidden-xs col-sm-4">
+            {{> sidebar}}
+        </div>
+          <!-- Enlarged Image Modal -->
+      <div class="modal fade" id="large-image-modal">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <script src="{{site.url}}/scripts/main.js"></script>
+</body>
+</html>

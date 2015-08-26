@@ -1,0 +1,68 @@
+<header>
+<div class='container-fluid'>
+      <div class='col-xs-2'>
+        <img id='welcome-pic1' src="http://www.myspace.hanbingyan.net/images/pokemon/pokemon1.png" width='100'height='100'>
+      </div>
+      <div class='col-xs-7'>
+        <div class="alert alert-success">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Welcome!</strong> Hanbing first self-made blog!!!
+      </div>
+      </div>
+      <div class='col-xs-1 col-xs-offset-1'>
+        <img id='welcome-pic2' src="http://www.myspace.hanbingyan.net/images/pokemon/pokemon2.png" width='100'height='100'>
+      </div>
+      <!-- <div class='col-xs-1'>
+          <select name="themes">
+            <option value="background1">purple girl</option>
+            <option value="background2">pink sky</option>
+            <option value="background3">red heart</option>
+            <option value="background4">snow girl</option>
+            <option value="background5">pink girl</option>
+            <option value="background6">purple fantasy</option>
+            <option value="background7">high sky</option>
+            <option value="background8">dinosaurs</option>
+          </select>
+      </div> -->
+</div>
+</header>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{site.url}}">{{site.title}}</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right" id="contact">
+                <li>
+                    <a class="ion-ios-email-outline" title="Email is one of the best ways to contact me." href="mailto:hyan1203@gmail.com"></a>
+                </li>
+                <li>
+                    <a class="ion-social-facebook-outline" href="https://www.facebook.com/Hanbingyan1203"></a>
+                </li>
+                <li>
+                    <a
+                        class="ion-social-github-outline"
+                        href="https://github.com/hyan1203">
+                    </a>
+                </li>
+                <li>
+                    <a class="ion-social-linkedin-outline" href="https://www.linkedin.com/in/hanbingyan">
+                    </a>
+                </li>
+                <li>
+                    <a class="ion-link" href="http://hanbingyan.net"></a>
+                </li>
+                <li>
+                    <a class="ion-social-rss-outline" href="http://hanbingyan.net/wordpress/hobbyland"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
